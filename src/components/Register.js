@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { auth } from '../utils/firebase.config';
+import { auth } from "../utils/firebase.config"
 
 const Register = () => {
 
@@ -9,7 +9,10 @@ const Register = () => {
     const handleRegister = (e) => {
         e.preventDefault();
         try {
-            auth.createUserWithEmailAndPassword(registerEmail.current.value, registerPassword.current.value)
+            auth.createUserWithEmailAndPassword(
+                registerEmail.current.value,
+                registerPassword.current.value
+            );
         } catch (error) {
             console.log(error.message)
         }

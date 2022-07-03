@@ -5,11 +5,11 @@ import "firebase/compat/auth";
 // Your web app's Firebase configuration
 const app = firebase.initializeApp({
   apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: "react-firebase-crud-b1eca.firebaseapp.com",
-  projectId: "react-firebase-crud-b1eca",
-  storageBucket: "react-firebase-crud-b1eca.appspot.com",
-  messagingSenderId: "482560737767",
-  appId: "1:482560737767:web:bd31f2ba52f0baee26bd42"
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN, 
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 });
 
 // Initialize Firebase
